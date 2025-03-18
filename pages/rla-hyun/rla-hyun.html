@@ -16,7 +16,6 @@
       }
 
       #header {
-        border: solid, 1px;
         text-align: center;
         padding: 15px;
         margin: 0 0 5px 0;
@@ -36,11 +35,30 @@
         border: solid 1px;
         min-height: 100vh; /* 사이드 바와 동일한 높이 */
       }
+
+      ul {
+        list-style-type: none;
+        padding: 5px;
+      }
     </style>
   </head>
   <body>
-    <div id="header">헤더</div>
-    <div class="side_bar">사이드 바</div>
-    <div class="content">내용</div>
+    <div id="header">자기소개</div>
+    <div class="side_bar">
+      <ul>
+        <li><a href="#name">intro</a></li>
+        <li><a href="#my_link">site</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <ul id="content_list">
+        <img src="" />
+        <li id="name">이름:</li>
+        <li>나이:</li>
+        <li>mbti:</li>
+        <li><hr /></li>
+        <a href="#" id="my_link">github</a>
+      </ul>
+    </div>
   </body>
 </html>
