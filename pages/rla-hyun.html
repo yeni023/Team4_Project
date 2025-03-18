@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개 페이지</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      #header {
+        border: solid, 1px;
+        text-align: center;
+        padding: 15px;
+        margin: 0 0 5px 0;
+        font-size: 20px;
+      }
+
+      .side_bar {
+        width: 150px;
+        background: #f4f4f4;
+        float: left;
+        height: 100vh; /* 뷰포트 높이 맞추기 */
+        border: solid 1px;
+      }
+
+      .content {
+        margin-left: 160px;
+        border: solid 1px;
+        min-height: 100vh; /* 사이드 바와 동일한 높이 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">헤더</div>
+    <div class="side_bar">사이드 바</div>
+    <div class="content">내용</div>
+  </body>
+</html>
