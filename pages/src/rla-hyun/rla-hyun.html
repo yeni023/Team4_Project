@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개 페이지</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9; /* 배경색을 밝은 회색으로 설정 */
+      }
+
+      #header {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(0, 0, 0); /* 텍스트 색 */
+      }
+
+      .side_bar {
+        width: 150px;
+        background: #ffffff;
+        float: left;
+        margin-right: 10px;
+        height: 100vh; /* 뷰포트 높이 맞추기 */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-top: 20px;
+      }
+
+      .side_bar ul {
+        padding-left: 20px;
+      }
+
+      .side_bar ul li {
+        margin: 0 10px 10px 10px;
+        font-size: 18px;
+      }
+
+      .side_bar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .side_bar ul li a:hover {
+        color: #0000ff;
+      }
+
+      .content {
+        margin-left: 160px; /* 사이드바 크기만큼 여백 */
+        min-height: 100vh;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .content ul {
+        list-style-type: none;
+        padding: 20px;
+      }
+
+      .content ul li {
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+
+      .content ul li hr {
+        margin: 15px 0;
+        border: 1px solid #ddd;
+      }
+
+      #my_link {
+        color: #0000ff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      #my_link:hover {
+        color: #333;
+      }
+
+      img {
+        background-color: transparent;
+        width: 100%;
+        max-width: 200px; /* 이미지 최대 크기 설정 */
+        height: auto;
+        border-radius: 50%; /* 원형 이미지 */
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">자기소개</div>
+    <div class="side_bar">
+      <ul>
+        <li><a href="#name">intro</a></li>
+        <li><a href="#my_link">site</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <ul id="content_list">
+        <li><img src="profile_image.jpg" /></li>
+        <li id="name">이름: 김서현</li>
+        <li>나이: 25살(2001년)</li>
+        <li>mbti: intp</li>
+        <li>열심히 하겠습니다!</li>
+        <li><hr /></li>
+        <li><a href="https://github.com/rla-hyun" id="my_link">github</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
