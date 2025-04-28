@@ -7,18 +7,14 @@ export default [
   {
     languageOptions: {
       globals: {
-        ...globals.node, // ������ ȯ�濡�� ����ϴ� ���� ������ (window, document ��)
-        // Node.js ȯ���̶�� globals.node �߰� �Ǵ� ��� ���
-        // ��: ...globals.node,
-        // �ʿ��� ��� Ư�� ���� ���� �߰�: console: "readonly"
+        ...globals.node,
       },
       parserOptions: {
-        ecmaVersion: 2022, // ����Ͻô� �ڹٽ�ũ��Ʈ ������ �°� ���� (���� �ֽ� ������ ����մϴ�)
+        ecmaVersion: 2022,
         sourceType: "module",
       },
     },
   },
-  pluginJs.configs.recommended, // ESLint ���� ��Ģ ���
-  // �ٸ� ESLint �÷������̳� ������ �ʿ��ϸ� ���⿡ �߰�
-  eslintPluginPrettierRecommended, // Prettier ��Ģ ���� (ESLint�� �浹 ���� �� Prettier ��Ģ ���� �� ESLint ���� �߻�)
+  pluginJs.configs.recommended, 
+  eslintPluginPrettierRecommended,
 ];
